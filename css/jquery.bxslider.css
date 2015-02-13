@@ -1,0 +1,109 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+
+
+}
+
+.bx-wrapper img {
+	max-width:100% !important;
+	display:block;
+	margin: 0 auto;
+
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 16px;
+	height: 27px;
+	text-indent: -9999px;
+	z-index: 9999;
+
+
+
+}
+
+.bx-wrapper .bx-prev {
+	left: -40px;
+	background: url(../img/slider-controls.png) 0px 0 no-repeat;
+}
+
+.bx-wrapper .bx-next {
+	right:-40px;
+	background: url(../img/slider-controls.png) -16px 0 no-repeat;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background: url(../img/slider-controls.png) -32px 0 no-repeat;
+	
+}
+
+.bx-wrapper .bx-next:hover {
+	background: url(../img/slider-controls.png)-48px 0 no-repeat;
+}
+
+
